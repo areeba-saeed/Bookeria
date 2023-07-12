@@ -30,7 +30,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd React_E-Commerce
+  cd Bookeria
 ```
 
 Install dependencies
@@ -53,6 +53,7 @@ Start the server
 * [Redux](https://redux.js.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Fake Store API](https://fakestoreapi.com/)
+* [Axios](https://axios-http.com/docs/intro)
 
 ## Contributing
 
