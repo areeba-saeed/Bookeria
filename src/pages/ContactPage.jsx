@@ -16,7 +16,7 @@ const ContactPage = () => {
     };
 
     axios
-      .post("http://localhost:5000/api/contact", data)
+      .post("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/contact", data)
       .then((response) => {
         console.log(response.data);
         setName("");

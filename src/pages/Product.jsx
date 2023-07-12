@@ -25,7 +25,7 @@ const Product = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/books/find/${urlName}`)
+      .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/find/${urlName}`)
       .then((response) => {
         setProduct(response.data);
         setCategory(response.data.categoryId);
@@ -40,7 +40,7 @@ const Product = () => {
     if (category) {
       axios
         .get(
-          `http://localhost:5000/api/books/byCategory/${category}/${urlName}`
+          `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/byCategory/${category}/${urlName}`
         )
         .then((response) => {
           setSimilarProducts(response.data);
@@ -76,7 +76,7 @@ const Product = () => {
   };
 
   const ShowProduct = () => {
-    const imageUrl = `http://localhost:5000/api/books/images/${product.image}`;
+    const imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${product.image}`;
     return (
       <>
         <div className="container my-5 py-2">
@@ -145,7 +145,7 @@ const Product = () => {
         <div className="py-4 my-4">
           <div className="d-flex">
             {similarProducts.map((item) => {
-              const imageUrl = `http://localhost:5000/api/books/images/${item.image}`;
+              const imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${item.image}`;
               return (
                 <div key={item.id} className="card mx-4 text-center">
                   <img

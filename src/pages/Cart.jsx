@@ -14,7 +14,7 @@ const Cart = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/api/cart/${id}`)
+        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/${id}`)
         .then((response) => {
           setItems(response.data);
         })
@@ -45,7 +45,7 @@ const Cart = () => {
     if (id) {
       axios
         .patch(
-          `http://localhost:5000/api/cart/addcart/${id}/${product.productId._id}`
+          `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/addcart/${id}/${product.productId._id}`
         )
         .then((response) => {
           setItems(response.data);
@@ -61,7 +61,7 @@ const Cart = () => {
     if (id) {
       axios
         .patch(
-          `http://localhost:5000/api/cart/delete/${id}/${product.productId._id}`
+          `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/delete/${id}/${product.productId._id}`
         )
         .then((response) => {
           setItems(response.data);
@@ -110,9 +110,9 @@ const Cart = () => {
                     {items.map((item) => {
                       let imageUrl;
                       if (id) {
-                        imageUrl = `http://localhost:5000/api/books/images/${item.productId.image}`;
+                        imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${item.productId.image}`;
                       } else {
-                        imageUrl = `http://localhost:5000/api/books/images/${item.image}`;
+                        imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${item.image}`;
                       }
                       return (
                         <div key={item.id}>

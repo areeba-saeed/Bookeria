@@ -26,7 +26,7 @@ const Checkout = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/api/orders/checkout/${id}`)
+        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/orders/checkout/${id}`)
         .then((response) => {
           setItems(response.data);
         })
@@ -34,7 +34,7 @@ const Checkout = () => {
           console.log(error);
         });
       axios
-        .get(`http://localhost:5000/api/user/${id}`)
+        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/user/${id}`)
         .then((response) => {
           console.log(response.data);
           setName(response.data.name);
@@ -79,7 +79,7 @@ const Checkout = () => {
         totalPrice,
       };
       axios
-        .post("http://localhost:5000/api/orders", data)
+        .post("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/orders", data)
         .then((response) => {
           setSuccessMessage(true);
           setTimeout(() => {

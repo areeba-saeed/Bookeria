@@ -14,7 +14,7 @@ const Navbar = () => {
       setCounter(state.length);
     } else {
       axios
-        .get(`http://localhost:5000/api/cart/${id}`)
+        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/${id}`)
         .then((response) => {
           setCounter(response.data.length);
         })
