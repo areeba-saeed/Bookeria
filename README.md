@@ -24,13 +24,13 @@ https://reactjs-ecommerce-app.vercel.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/ssahibsingh/React_E-Commerce
+  git clone https://github.com/areeba-saeed/Bookeria.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd React_E-Commerce
+  cd Bookeria
 ```
 
 Install dependencies
@@ -53,15 +53,11 @@ Start the server
 * [Redux](https://redux.js.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Fake Store API](https://fakestoreapi.com/)
-
-## Contributing
-
-Contributions are always welcome!
-Just raise an issue, we will discuss it.
+* [Axios](https://axios-http.com/docs/intro)
 
 
-## Feedback
 
-If you have any feedback, please reach out to me [here](https://ssahibsingh.github.io/#contact)
+
+
 
 
