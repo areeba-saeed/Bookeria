@@ -219,12 +219,24 @@ const Cart = () => {
                         </span>
                       </li>
                     </ul>
-
-                    <Link
-                      to="/checkout"
-                      className="btn btn-dark btn-lg btn-block">
+                    {!id ? (
+                      <p style={{ color: "red", fontSize: 18 }}>
+                        Please login first
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                    <button
+                      className="btn btn-dark btn-lg btn-block"
+                      disabled={id ? false : true}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (id) {
+                          window.location.href = "/checkout";
+                        }
+                      }}>
                       Go to checkout
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
