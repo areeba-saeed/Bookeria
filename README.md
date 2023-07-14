@@ -5,7 +5,7 @@ A Ecommerce Website made with React.js Framework.
 
 ## Demo
 
-https://bookeria.vercel.app/?vercelToolbarCode=6yDqraY-INVUTrJ
+https://bookeria-1uwx6m2v5-areeba-saeed.vercel.app/?vercelToolbarCode=S8oCtUF3UjSD_IF
 
 ## Features
 
