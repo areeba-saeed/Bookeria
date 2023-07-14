@@ -21,7 +21,7 @@ const Products = () => {
       dispatch(addCart(product));
     } else {
       axios
-        .patch(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/addcart/${id}/${product._id}`)
+        .patch(`https://bookeriaapi-4c4e83f96829.herokuapp.com/api/cart/addcart/${id}/${product._id}`)
         .then((response) => {
           console.log(response.data);
         })
@@ -33,7 +33,7 @@ const Products = () => {
 
   useEffect(() => {
     axios
-      .get("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/categories")
+      .get("https://bookeriaapi-4c4e83f96829.herokuapp.com/api/categories")
       .then((response) => {
         setCategories(response.data);
       })
@@ -41,7 +41,7 @@ const Products = () => {
         console.log(error);
       });
     axios
-      .get("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books")
+      .get("https://bookeriaapi-4c4e83f96829.herokuapp.com/api/books")
       .then((response) => {
         setbooks(response.data);
         setFilter(response.data);
@@ -105,7 +105,7 @@ const Products = () => {
           })}
         </div>
         {filter.map((product) => {
-          const imageUri = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${product.image}`;
+          const imageUri = `https://bookeriaapi-4c4e83f96829.herokuapp.com/api/books/images/${product.image}`;
           const parser = new DOMParser();
           const html = product.description;
           const doc = parser.parseFromString(html, "text/html");

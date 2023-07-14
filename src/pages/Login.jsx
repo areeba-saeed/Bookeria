@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     const data = { email: email, password: password };
     axios
-      .post("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/users/login", data)
+      .post("https://bookeriaapi-4c4e83f96829.herokuapp.com/api/users/login", data)
       .then((response) => {
         console.log(response.data);
         localStorage.setItem("userId", response.data.user.id);

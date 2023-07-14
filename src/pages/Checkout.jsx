@@ -26,7 +26,7 @@ const Checkout = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/orders/checkout/${id}`)
+        .get(`https://bookeriaapi-4c4e83f96829.herokuapp.com/api/orders/checkout/${id}`)
         .then((response) => {
           setItems(response.data);
         })
@@ -34,7 +34,7 @@ const Checkout = () => {
           console.log(error);
         });
       axios
-        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/user/${id}`)
+        .get(`https://bookeriaapi-4c4e83f96829.herokuapp.com/api/user/${id}`)
         .then((response) => {
           console.log(response.data);
           setName(response.data.name);
@@ -79,7 +79,7 @@ const Checkout = () => {
         totalPrice,
       };
       axios
-        .post("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/orders", data)
+        .post("https://bookeriaapi-4c4e83f96829.herokuapp.com/api/orders", data)
         .then((response) => {
           setSuccessMessage(true);
           setTimeout(() => {

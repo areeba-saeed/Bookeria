@@ -20,7 +20,7 @@ const Register = () => {
     };
 
     axios
-      .post("https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/users/register", data)
+      .post("https://bookeriaapi-4c4e83f96829.herokuapp.com/api/users/register", data)
       .then((response) => {
         console.log(response.data);
         localStorage.setItem("userId", response.data._id);

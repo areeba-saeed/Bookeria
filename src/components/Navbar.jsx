@@ -14,7 +14,7 @@ const Navbar = () => {
       setCounter(state.length);
     } else {
       axios
-        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/${id}`)
+        .get(`https://bookeriaapi-4c4e83f96829.herokuapp.com/api/cart/${id}`)
         .then((response) => {
           setCounter(response.data.length);
         })

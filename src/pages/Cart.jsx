@@ -14,7 +14,7 @@ const Cart = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/${id}`)
+        .get(`https://bookeriaapi-4c4e83f96829.herokuapp.com/api/cart/${id}`)
         .then((response) => {
           setItems(response.data);
         })
@@ -45,7 +45,7 @@ const Cart = () => {
     if (id) {
       axios
         .patch(
-          `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/addcart/${id}/${product.productId._id}`
+          `https://bookeriaapi-4c4e83f96829.herokuapp.com/api/cart/addcart/${id}/${product.productId._id}`
         )
         .then((response) => {
           setItems(response.data);
@@ -61,7 +61,7 @@ const Cart = () => {
     if (id) {
       axios
         .patch(
-          `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/cart/delete/${id}/${product.productId._id}`
+          `https://bookeriaapi-4c4e83f96829.herokuapp.com/api/cart/delete/${id}/${product.productId._id}`
         )
         .then((response) => {
           setItems(response.data);
@@ -110,9 +110,9 @@ const Cart = () => {
                     {items.map((item) => {
                       let imageUrl;
                       if (id) {
-                        imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${item.productId.image}`;
+                        imageUrl = `https://bookeriaapi-4c4e83f96829.herokuapp.com/api/books/images/${item.productId.image}`;
                       } else {
-                        imageUrl = `https://protected-plateau-82492-26f0113d64bb.herokuapp.com/api/books/images/${item.image}`;
+                        imageUrl = `https://bookeriaapi-4c4e83f96829.herokuapp.com/api/books/images/${item.image}`;
                       }
                       return (
                         <div key={item.id}>
