@@ -15,7 +15,7 @@ https://bookeria-1uwx6m2v5-areeba-saeed.vercel.app/?vercelToolbarCode=S8oCtUF3Uj
 
 ## Screenshots
 
-![App Screenshot](https://bookeriapai-508a69cd9780.herokuapp.com/api/books/images/screenshot.PNG)
+![App Screenshot](https://bookeriaapi-4c4e83f96829.herokuapp.com/api/books/images/screenshot.PNG)
 
 
 
