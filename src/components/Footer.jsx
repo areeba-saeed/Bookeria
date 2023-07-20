@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="d-flex align-items-center justify-content-center pb-5">
           <div className="col-md-6">
             <p className="mb-3 mb-md-0">
-              Made with ❤️ by{" "}
+              Made by{" "}
               <a
                 href="https://github.com/areeba-saeed"
                 className="text-decoration-underline text-dark fs-5"
